@@ -11,3 +11,7 @@
 #page_job .job_menu {
   display: inline;
 }
+
+#job .metadata {
+  font-size: 14px;
+}

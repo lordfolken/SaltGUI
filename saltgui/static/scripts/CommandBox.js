@@ -334,6 +334,15 @@ export class CommandBox {
       // { "jid": "20180718173942195461", "minions": [ ... ] }
     }
 
-    return this.api.apiRequest("POST", "/", params);
+    // used values are "MANUAL" and "SALTGUI"
+    // MANUAL = command started from runbox
+    // SALTGUI = command is internal
+    params.metadata = { saltgui: "MANUAL" };
+
+    return this.api.apiRequest("POST", "/", params)
+      .catch(error => {
+        this._showError(error.message);
+        return error;
+      });
   }
 }

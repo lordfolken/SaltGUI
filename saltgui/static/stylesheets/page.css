@@ -12,7 +12,13 @@
   width: 100%;
 }
 
-pre a {
+.collapsed {
+  color: red;
+  max-height: calc(1em + 8px);
+  overflow-y: hidden;
+}
+
+pre.output a {
   color: yellow;
   cursor: pointer;
 }

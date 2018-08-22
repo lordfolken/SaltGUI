@@ -1,3 +1,4 @@
+import {Documentation} from '../Documentation.js';
 import {DropDownMenu} from '../DropDown.js';
 import {PageRoute} from './Page.js';
 import {Route} from './Route.js';

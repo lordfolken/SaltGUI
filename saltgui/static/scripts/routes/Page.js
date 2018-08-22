@@ -367,6 +367,7 @@ export class PageRoute extends Route {
     this._hideJobs.push("schedule.modify");
     this._hideJobs.push("schedule.run_job");
     this._hideJobs.push("sys.doc");
+    this._hideJobs.push("test.providers");
     this._hideJobs.push("wheel.config.values");
     this._hideJobs.push("wheel.key.accept");
     this._hideJobs.push("wheel.key.delete");
